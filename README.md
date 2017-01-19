@@ -2,9 +2,9 @@
 Django i18nize extends the i18nize python client. This package contains template tag for rendering translation and management command for fetching translations.
 
 ## Links
-*i18nize website:* http://www.i18nize.com
-*i18nize python client*: https://github.com/iktw/i18nize
-*i18nize javascript client*: https://github.com/iktw/i18nize-javascript
+* *Website:* http://www.i18nize.com
+* *Python client*: https://github.com/iktw/i18nize
+* *JavaScript client*: https://github.com/iktw/i18nize-javascript
 
 
 ## Installation
