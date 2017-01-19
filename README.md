@@ -14,21 +14,21 @@ DJANGO_I18NIZE_CONFIG = {
 }
 ```
 
-### 1. Template tag with simple translations (Uses the django language)
+### Example 1: Template tag with simple translations (Uses the django language)
 ```html
 <p>
     {% i18n_switch "hello" %}
 </p>
 ```
 
-### 2. Template tag example with custom language:
+### Example 2: Template tag example with custom language:
 ```html
 <p>
     {% i18n_switch "hello" "sv" %}
 </p>
 ```
 
-### 3. Template tag example with values
+### Example 3: Template tag example with values
 
 #### Passed view context:
 ```python
@@ -48,4 +48,20 @@ DJANGO_I18NIZE_CONFIG = {
 <p>
     {% i18n_switch "greet_person" "en" values %}
 </p>
+```
+
+### Example 4: Usage within your python code
+```python
+from django_i18nize.utils import get_translation as _
+
+# Simple translation (Uses the django language)
+text = _('hello')
+
+# Translation with custom language
+text = _('hello', language='sv')
+
+# Translation with custom values, remember that your key should be injected within your translation.
+# For example, your translated key at www.i18nize.com should be "Hello {{name}}!"
+text = _('greeting', values={"name": "John Doe"})
+
 ```
