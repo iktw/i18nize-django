@@ -20,6 +20,12 @@ DJANGO_I18NIZE_CONFIG = {
 }
 ```
 
+### Fetch locales to your destination dir:
+```shell
+python manage.py fetch_locale
+
+```
+
 ### Example 1: Template tag with simple translations (Uses the django language)
 ```html
 <p>
